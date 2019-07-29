@@ -1,16 +1,10 @@
-# chinese_poetry
+# chinese_poetry 中华诗词
 
 chinese_poetry flutter
 
-## Getting Started
+## 中华诗词 APP
 
-This project is a starting point for a Flutter application.
+- [中华诗词](https://github.com/chinese-poetry/chinese-poetry)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+最近在学习flutter。决定用flutter做一个中华诗词的APP
+尽量抽时间，尽快完成这个APP
