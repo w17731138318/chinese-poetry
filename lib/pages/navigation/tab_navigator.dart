@@ -32,7 +32,6 @@ class TabNavigator extends StatelessWidget {
             onPush: (author) => _push(context, author: author),
           ),
       TabNavigatorRoutes.detail: (context) => ColorDetailPage(
-            title: TabHelper.description(tabItem),
             author: author,
           ),
     };

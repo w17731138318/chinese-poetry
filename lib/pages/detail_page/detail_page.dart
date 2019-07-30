@@ -2,8 +2,7 @@ import 'package:chinese_poetry/pages/entity/author.dart';
 import 'package:flutter/material.dart';
 
 class ColorDetailPage extends StatelessWidget {
-  ColorDetailPage({this.title, this.author});
-  final String title;
+  ColorDetailPage({Key key, @required this.author}) : super(key: key);
   final Author author;
 
   @override

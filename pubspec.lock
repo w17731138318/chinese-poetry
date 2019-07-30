@@ -67,13 +67,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  infinite_listview:
-    dependency: "direct main"
-    description:
-      name: infinite_listview
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "1.0.0"
   matcher:
     dependency: transitive
     description:

@@ -33,11 +33,6 @@ class ColorsListPage extends StatelessWidget {
     Author(2, '李白', '唐朝诗人李白'),
     Author(3, '李白', '唐朝诗人李白')
   ];
-  // 刷新时数据请求
-  void _loadRefresh() {
-    List<Author> authors1 = [Author(1, '李白1', '唐朝诗人李白'), Author(2, '李白2', '唐朝诗人李白'), Author(3, '李白3', '唐朝诗人李白'), Author(4, '李白4', '唐朝诗人李白'), Author(5, '李白5', '唐朝诗人李白')];
-    authors.addAll(authors1);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,11 +43,8 @@ class ColorsListPage extends StatelessWidget {
           ),
         ),
         body: Container(
-          color: Colors.white,
-          child: RefreshIndicator(
-            child: _buildList(),
-            onRefresh: _loadRefresh,
-          ),
+          color: Color.fromRGBO(254, 244, 235, 1.0),
+          child: _buildList(),
         ));
   }
 
