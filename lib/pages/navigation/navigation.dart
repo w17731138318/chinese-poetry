@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum TabItem { tangShi, songCi, mine }
+enum TabItem { tangShi, songCi, yuanQu, mine }
 
 class TabHelper {
   static TabItem item({int index}) {
@@ -10,6 +10,8 @@ class TabHelper {
       case 1:
         return TabItem.songCi;
       case 2:
+        return TabItem.yuanQu;
+      case 3:
         return TabItem.mine;
     }
     return TabItem.tangShi;
@@ -21,6 +23,8 @@ class TabHelper {
         return '唐诗';
       case TabItem.songCi:
         return '宋词';
+      case TabItem.yuanQu:
+        return '元曲';
       case TabItem.mine:
         return '我的';
     }
@@ -44,6 +48,7 @@ class BottomNavigation extends StatelessWidget {
       items: [
         _buildItem(tabItem: TabItem.tangShi),
         _buildItem(tabItem: TabItem.songCi),
+        _buildItem(tabItem: TabItem.yuanQu),
         _buildItem(tabItem: TabItem.mine),
       ],
       onTap: (index) => onSelectTab(

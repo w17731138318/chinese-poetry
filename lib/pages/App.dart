@@ -13,6 +13,7 @@ class AppState extends State<App> {
   Map<TabItem, GlobalKey<NavigatorState>> navigatorKeys = {
     TabItem.tangShi: GlobalKey<NavigatorState>(),
     TabItem.songCi: GlobalKey<NavigatorState>(),
+    TabItem.yuanQu: GlobalKey<NavigatorState>(),
     TabItem.mine: GlobalKey<NavigatorState>(),
   };
 
@@ -43,6 +44,7 @@ class AppState extends State<App> {
     return Stack(children: <Widget>[
       _buildOffstageNavigator(TabItem.tangShi),
       _buildOffstageNavigator(TabItem.songCi),
+      _buildOffstageNavigator(TabItem.yuanQu),
       _buildOffstageNavigator(TabItem.mine),
     ]);
   }
